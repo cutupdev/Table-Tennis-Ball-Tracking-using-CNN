@@ -1,14 +1,7 @@
-# TTNet-Pytorch
+# Pytorch-CNN
 
 [![python-image]][python-url]
 [![pytorch-image]][pytorch-url]
-
-The implementation for the paper _**"TTNet: Real-time temporal and spatial video analysis of table tennis"**_ <br>
-An introduction of the project could be found [here (from the authors)](https://medium.com/@osai.ai/osai-empowered-russian-table-tennis-championship-with-cv-and-ai-analytics-e7d52a6d8a5c)
-
----
-
-## Demo
 
 ![demo](./docs/demo.gif)
 
@@ -17,23 +10,11 @@ An introduction of the project could be found [here (from the authors)](https://
 - [x] Ball detection local stage (refinement)
 - [x] Events Spotting detection (Bounce and Net hit)
 - [x] Semantic Segmentation (Human, table, and scoreboard)
-- [x] [Multi-Task learning](https://arxiv.org/pdf/1705.07115.pdf)
+- [x] Multi-Task learning
 - [x] [Distributed Data Parallel Training](https://github.com/pytorch/examples/tree/master/distributed/ddp)
 - [x] Enable/Disable modules in the TTNet model
 - [x] Smooth labeling for event spotting
 - [x] TensorboardX
-
-- **(Update 2020.06.23)**: Training much faster, achieve _**> 120 FPS**_ in the inference phase on a single 
-GPU (GTX1080Ti). <br>
-
-- **(Update 2020.07.03)**: The implementation could achieve comparative results with the reported results in the TTNet paper. <br>
-
-- **(Update 2020.07.06)**: There are several limitations of the TTNet Paper (hints: Loss function, input size, and 2 more). I have implemented the task with a new 
-approach and a new model. Now the new model could achieve:
-  - `>` **130FPS** inference, 
-  - **~0.96** IoU score for the segmentation task
-  - `<` **4 pixels** (in the full HD resolution *(1920x1080)*) of Root Mean Square Error (RMSE) for the ball detection task<br>
-  - **~97%** percentage of correction events **(PCE)** and smooth PCE **(SPCE)**.
   
 
 ## 2. Getting Started
@@ -51,8 +32,6 @@ $ sudo apt-get install libturbojpeg
 $ pip install PyTurboJPEG
 ...
 ```
-
-Other instruction for setting up virtual environments is [here](https://github.com/maudzung/virtual_environment_python3)
 
 ### 2.1. Preparing the dataset
 The instruction for the dataset preparation is [here](./prepare_dataset/README.md)
@@ -178,7 +157,11 @@ Run a demonstration with an input video:
 If you think this work is useful, please give me a star!
 If you find any errors or have any suggestions, please contact me. Thank you!
 
-**Email:** `nguyenmaudung93.kstn@gmail.com`
+**Email:** `takasi@gmail.com`
+**Discord:** `https://discord.com/users/1170041065093484605`
+**Whatsapp:** `https://wa.me/13137423660`
+**Skype:** `https://join.skype.com/invite/t2uM2YKvfsWt`
+**Telegram:** `https://t.me/takashi75926`
 
 ## Citation
 
@@ -322,8 +305,3 @@ optional arguments:
   --save_demo_output    If true, the image of demonstration phase will be
                         saved
 ```
-
-[python-image]: https://img.shields.io/badge/Python-3.6-ff69b4.svg
-[python-url]: https://www.python.org/
-[pytorch-image]: https://img.shields.io/badge/PyTorch-1.5-2BAF2B.svg
-[pytorch-url]: https://pytorch.org/
