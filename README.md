@@ -152,17 +152,6 @@ Run a demonstration with an input video:
 ./demo.sh
 ```
 
-## Contact
-
-If you think this work is useful, please give me a star!
-If you find any errors or have any suggestions, please contact me. Thank you!
-
-**Email:** `takasi@gmail.com`
-**Discord:** `https://discord.com/users/1170041065093484605`
-**Whatsapp:** `https://wa.me/13137423660`
-**Skype:** `https://join.skype.com/invite/t2uM2YKvfsWt`
-**Telegram:** `https://t.me/takashi75926`
-
 ## Citation
 
 ```bash
